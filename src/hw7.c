@@ -3,6 +3,8 @@
 //CSE 220 - HW7
 
 #include "hw7.h"
+#include <stdio.h>
+#include <sys/types.h>
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
@@ -294,7 +296,8 @@ char* infix2postfix_sf(char *infix) {
             new_prec = 2;
             }
 
-            while (top >= 0 && ops[top] != '(') {
+            while (top >= 0 && ops[top] != '(')
+            {
             int top_prec = -1;
             if (ops[top] == '+')
                 top_prec = 1;
@@ -305,8 +308,9 @@ char* infix2postfix_sf(char *infix) {
                 out[k++] = ops[top--];
             else
                 break;
-        }
+            }
         ops[++top] = ch;
+        }
     }
     while (top >= 0)
     {
@@ -554,7 +558,6 @@ void print_matrix_sf(matrix_sf *mat) {
             printf(" ");
     }
     printf("\n");
-    
 }
 
 
