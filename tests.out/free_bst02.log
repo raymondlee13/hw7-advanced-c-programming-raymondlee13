@@ -1,13 +1,13 @@
-==18800== Memcheck, a memory error detector
-==18800== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==18800== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==18800== Command: ./bin/free_bst02
-==18800== 
-==18800== 
-==18800== HEAP SUMMARY:
-==18800==     in use at exit: 0 bytes in 0 blocks
-==18800==   total heap usage: 12 allocs, 12 frees, 216 bytes allocated
-==18800== 
-==18800== All heap blocks were freed -- no leaks are possible
-==18800== 
-==18800== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==2602== Memcheck, a memory error detector
+==2602== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2602== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==2602== Command: ./bin/free_bst02
+==2602== 
+==2602== 
+==2602== HEAP SUMMARY:
+==2602==     in use at exit: 0 bytes in 0 blocks
+==2602==   total heap usage: 12 allocs, 12 frees, 216 bytes allocated
+==2602== 
+==2602== All heap blocks were freed -- no leaks are possible
+==2602== 
+==2602== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

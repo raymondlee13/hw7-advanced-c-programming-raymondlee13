@@ -1,37 +1,14 @@
-==18635== Memcheck, a memory error detector
-==18635== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==18635== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==18635== Command: ./bin/execute_script script08
-==18635== 
+==2428== Memcheck, a memory error detector
+==2428== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2428== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==2428== Command: ./bin/execute_script script08
+==2428== 
 5 3 -2859666 -1437834 -2013457 322864 2425144 -3794345 -384442 1515424 -1581026 -3613050 -4075402 -376123 410587 391387 77895
-==18635== 
-==18635== HEAP SUMMARY:
-==18635==     in use at exit: 408 bytes in 7 blocks
-==18635==   total heap usage: 17 allocs, 10 frees, 9,726 bytes allocated
-==18635== 
-==18635== 72 bytes in 3 blocks are indirectly lost in loss record 1 of 3
-==18635==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==18635==    by 0x1094ED: insert_bst_sf (hw7.c:42)
-==18635==    by 0x10A6E8: execute_script_sf (hw7.c:524)
-==18635==    by 0x1093CE: main (execute_script.c:8)
-==18635== 
-==18635== 312 bytes in 3 blocks are indirectly lost in loss record 2 of 3
-==18635==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==18635==    by 0x109AFB: create_matrix_sf (hw7.c:209)
-==18635==    by 0x10A686: execute_script_sf (hw7.c:510)
-==18635==    by 0x1093CE: main (execute_script.c:8)
-==18635== 
-==18635== 408 (24 direct, 384 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 3
-==18635==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==18635==    by 0x109452: insert_bst_sf (hw7.c:18)
-==18635==    by 0x10A6E8: execute_script_sf (hw7.c:524)
-==18635==    by 0x1093CE: main (execute_script.c:8)
-==18635== 
-==18635== LEAK SUMMARY:
-==18635==    definitely lost: 24 bytes in 1 blocks
-==18635==    indirectly lost: 384 bytes in 6 blocks
-==18635==      possibly lost: 0 bytes in 0 blocks
-==18635==    still reachable: 0 bytes in 0 blocks
-==18635==         suppressed: 0 bytes in 0 blocks
-==18635== 
-==18635== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==2428== 
+==2428== HEAP SUMMARY:
+==2428==     in use at exit: 0 bytes in 0 blocks
+==2428==   total heap usage: 17 allocs, 17 frees, 9,726 bytes allocated
+==2428== 
+==2428== All heap blocks were freed -- no leaks are possible
+==2428== 
+==2428== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
